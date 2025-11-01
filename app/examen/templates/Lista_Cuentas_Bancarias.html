@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuentas Bancarias</title>
+</head>
+<body>
+    <h1>Lista de cuentas bancarias</h1>
+    {% for cuenta in Cuentas_Bancarias_Mostrar %}
+    <hr>
+    <h2>Usuario: {{cuenta.usuario.nombre_usuario}}</h2>
+    <h3>Banco: {{cuenta.get_banco_display}}</h3>
+    <hr>
+    {% endfor %}
+
+    
+</body>
+</html>

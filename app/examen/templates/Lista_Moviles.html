@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Moviles</title>
+</head>
+<body>
+    <h1>Listas de moviles</h1>
+    <hr>
+
+    {% for movil in Moviles_Mostrar %}
+        <br><hr>
+        <h3>Movil: {{movil.modelo}}</h3>
+        <p>Descripcion: {{movil.descripcion}}</p>
+        <h3>Fecha Salida: {{movil.fecha_salida}}</h3>
+        <br><hr>
+    {% endfor %}
+
+</body>
+</html>

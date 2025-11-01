@@ -13,9 +13,10 @@
     <br>
 
     <ul>
-        <li><a href="">Enlace URL 1</a></li>
-        <li><a href="">Enlace URL 2</a></li>
-        <li><a href="">Enlace URL 3</a></li>
+        <li><a href="{% url 'dame_ultimo_voto' id_movil=1 %}">Enlace URL 1</a></li>
+        <li><a href="{% url 'dame_moviles_malos' id_usuario=2 %}">Enlace URL 2</a></li>
+        <li><a href="{% url 'dame_usuarios_nunca_votaron' %}">Enlace URL 3</a></li>
+        <li><a href="{% url 'dame_cuentas_bancarias' texto="sor" %}">Enlace URL 4</a></li>
     </ul>
 
 </body>
