@@ -13,9 +13,11 @@
     <br>
 
     <ul>
-        <li><a href="">Enlace URL 1</a></li>
-        <li><a href="">Enlace URL 2</a></li>
-        <li><a href="">Enlace URL 3</a></li>
+        <li><a href="{% url 'dame_animal' id_animal=1 %}">Enlace URL 1</a></li>
+        <li><a href="{% url 'dame_revision' id_animal=1 %}">Enlace URL 2</a></li>
+        <li><a href="{% url 'dame_alimales_revisiones' %}">Enlace URL 3</a></li>
+        <li><a href="{% url 'dame_tipo_sin_animales' %}">Enlace URL 4</a></li>
+        <li><a href="{% url 'dame_alerta_pendiente_2025' %}">Enlace URL 5</a></li>
     </ul>
 
 </body>

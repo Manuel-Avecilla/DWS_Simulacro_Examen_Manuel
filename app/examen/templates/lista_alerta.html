@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas</title>
+</head>
+<body>
+    <h1>Lista alertas</h1>
+    <hr>
+
+    {% for alerta in Alertas_Mostrar %}
+        <hr>
+        <h3>Fecha Creacion: {{alerta.fecha_creacion}}</h3>
+        <p>Mensaje: {{alerta.mensaje}}</p>
+
+        <h3>Animal: </h3>
+        <h3>Nombre: {{alerta.revision.animal.nombre}}</h3>
+        <p>descripcion: {{alerta.revision.animal.descripcion}}</p>
+        <h3>Fecha Nacimiento: {{alerta.revision.animal.fecha_nacimiento}}</h3>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>

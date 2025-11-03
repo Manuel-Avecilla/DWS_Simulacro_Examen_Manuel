@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos</title>
+</head>
+<body>
+    <h1>Lista de Tipos</h1>
+    <hr>
+
+    {% for tipo in Tipos_Mostrar %}
+    
+        <h3>Nombre: {{tipo.nombre}}</h3>
+        <h3>Nivel de prioridad: {{tipo.nivel_prioridad}}</h3>
+        <p>Descripcion: {{tipo.descripcion}}</p>
+    
+    {% endfor %}
+
+</body>
+</html>
