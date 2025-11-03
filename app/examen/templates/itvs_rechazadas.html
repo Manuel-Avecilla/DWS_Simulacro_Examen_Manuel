@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista ITVs</title>
+</head>
+<body>
+    <h1>Lista de ITVS</h1>
+    <hr>
+
+    {% for itv in Itvs_Mostrar %}
+        <hr>
+        <h3>resultado: {{itv.resultado}}</h3>
+        <h3>numero itv: {{itv.numero_itv}}</h3>
+        <h3>num revisiones: {{itv.num_revisiones}}</h3>
+        <hr>
+    {% endfor %}
+</body>
+</html>

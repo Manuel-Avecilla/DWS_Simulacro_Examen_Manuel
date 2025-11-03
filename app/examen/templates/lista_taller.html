@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Taller</title>
+</head>
+<body>
+    
+    <h1>Lista Taller</h1>
+    <hr>
+
+    {% for taller in Talleres_Mostrar %}
+        <hr>
+        <h3>Nombre: {{taller.nombre}}</h3>
+        <h3>Ciudad: {{taller.ciudad}}</h3>
+        <h3>Capacidad: {{taller.capacidad}}</h3>
+        <hr>
+    {% endfor %}
+
+
+</body>
+</html>

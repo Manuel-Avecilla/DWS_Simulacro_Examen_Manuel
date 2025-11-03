@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de coches</title>
+</head>
+<body>
+    <h1>Lista de coches</h1>
+    <hr>
+
+    {% for coche in Coches_Mostrar %}
+        <hr>
+        <h3>Marca: {{coche.marca}}</h3>
+        <h3>Modelo: {{coche.modelo}}</h3>
+        <h3>Precio Base: {{coche.precio_base}}</h3>
+        <h3>Fecha revision: {{coche.revision.fecha_revision}}</h3>
+        <h3>Taller: {{coche.revision.taller.nombre}}</h3>
+        <hr>
+    {% endfor %}
+</body>
+</html>
