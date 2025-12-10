@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('examen.urls')),
     path("__debug__/", include("debug_toolbar.urls")),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 handler404 = "examen.views.mi_error_404"

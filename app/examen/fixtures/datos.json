@@ -1,0 +1,454 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 6,
+        "codename": "add_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 6,
+        "codename": "change_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 6,
+        "codename": "delete_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 6,
+        "codename": "view_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add tecnico",
+        "content_type": 7,
+        "codename": "add_tecnico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change tecnico",
+        "content_type": 7,
+        "codename": "change_tecnico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete tecnico",
+        "content_type": 7,
+        "codename": "delete_tecnico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view tecnico",
+        "content_type": 7,
+        "codename": "view_tecnico"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "Administrador",
+        "permissions": [
+            21,
+            22,
+            23,
+            24
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "Tecnico",
+        "permissions": [
+            22,
+            24
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+        "name": "Usuario",
+        "permissions": [
+            24
+        ]
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "examen",
+        "model": "usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "examen",
+        "model": "tecnico"
+    }
+},
+{
+    "model": "examen.usuario",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$iVSgqQNtUN2UmZNsvSty71$1u+6hsS5ThEN2dmjBbF3dRO5xkhm8IwLCS0EU6ml/6s=",
+        "last_login": "2025-12-10T21:35:08.117",
+        "is_superuser": false,
+        "username": "manuel",
+        "first_name": "",
+        "last_name": "",
+        "email": "manuel.avecilla.gavilan.al@iespoligonosur.org",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-10T21:27:28.227",
+        "rol": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "examen.usuario",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$HfwDGxYQhRaVo6MLXHCHHJ$wqT5LnoqmCTgfR24cO8ELYeOQst3WfO2+Y+A8/1brQ0=",
+        "last_login": "2025-12-10T21:35:41.946",
+        "is_superuser": false,
+        "username": "manuel-2",
+        "first_name": "",
+        "last_name": "",
+        "email": "manuel.avecilla.gavilan.al@iespoligonosur.org",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-10T21:35:41.522",
+        "rol": 2,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "examen.usuario",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$vRDhpH9Thkt1zypnnI5CFw$TGZ8HvEe1q6XeaS+A6mZEneIWA0dBwYDecLxOoc68IE=",
+        "last_login": "2025-12-10T22:01:04.193",
+        "is_superuser": false,
+        "username": "manuel-p1",
+        "first_name": "",
+        "last_name": "",
+        "email": "manuel.avecilla.gavilan.al@iespoligonosur.org",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-10T22:01:03.761",
+        "rol": 2,
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "examen.usuario",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$rdn2jGNMV9lkZ5JL8fPLZG$pPMZj+0eEQ4/JGhJ8Qv1LqQj2j3TSofg31n/eY6Tzlk=",
+        "last_login": "2025-12-10T22:02:26.677",
+        "is_superuser": false,
+        "username": "manuel-p2",
+        "first_name": "",
+        "last_name": "",
+        "email": "manuel.avecilla.gavilan.al@iespoligonosur.org",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-10T22:02:26.212",
+        "rol": 3,
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "examen.usuario",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$Ver2sEbiOm7AgLN9dvjqHt$uc7vFoGaMKbjIGV1b4gosut/WUF1Hwi1vXZnemOQb70=",
+        "last_login": "2025-12-10T22:03:26.675",
+        "is_superuser": false,
+        "username": "manuel-p3",
+        "first_name": "",
+        "last_name": "",
+        "email": "manuel.avecilla.gavilan.al@iespoligonosur.org",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-10T22:03:26.271",
+        "rol": 3,
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "examen.tecnico",
+    "pk": 1,
+    "fields": {
+        "usuario": 3,
+        "edad": null,
+        "puesto": "fgr4greg"
+    }
+}
+]
