@@ -1,18 +1,18 @@
 {% extends "base/base.html" %}
 {% load static %}
 
-{% block title %}Examen - Tecnicos{% endblock %}
+{% block title %}Examen - Organizadores{% endblock %}
 
 
 {% block cabecera %}
-    <h1>Lista Tecnicos</h1>
+    <h1>Lista Organizadores</h1>
     <hr>
     <br>
 {% endblock %}
 
 {% block contenido %}
     
-    {% if perms.examen.delete_tecnico %}
+    {% if perms.examen.delete_organizador %}
         {% include "base/modal/_modal_eliminar.html" %}
     {% endif %}
 
@@ -23,10 +23,10 @@
     {% endif %}
 
     <div class="d-flex flex-wrap align-content-center justify-content-center gap-4">
-        {% for Tecnico_Mostrar in Tecnicos_Mostrar %}
-            {% include "models/tecnico/_item_tecnico.html" %}
+        {% for Organizador_Mostrar in Organizadores_Mostrar %}
+            {% include "models/organizador/_item_organizador.html" %}
         {% empty %}
-            <h2>No se encontraron tecnicos</h2>
+            <h2>No se encontraron Organizadores</h2>
         {% endfor %}
     </div>
 

@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% load bootstrap_icons %}
+
+{% block title %}Examen - UPDATE{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block cabecera %}
+    <h1>Actualizar Evento</h1>
+    <hr>
+    <br>
+{% endblock %}
+{% block contenido %}
+    <form action="{% url 'evento_editar' id_evento=evento.id %}" method="post">
+        {% csrf_token %}
+        {% bootstrap_form formulario %}
+        <button type="submit" class="btn btn-success">Actualizar</button>
+        <a href="{% url 'eventos_listar' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+{% endblock %}

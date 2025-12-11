@@ -1,0 +1,21 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% load bootstrap_icons %}
+
+{% block title %}Examen - Create{% endblock %}
+
+
+{% block cabecera %}
+    <h1>Crear Evento</h1>
+    <hr>
+    <br>
+{% endblock %}
+{% block contenido %}
+    <form action="{% url 'evento_create' %}" method="post">
+        {% csrf_token %}
+        {% bootstrap_form formulario %}
+        <button type="submit" class="btn btn-success">Crear</button>
+        <a href="{% url 'eventos_listar' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+{% endblock %}

@@ -1,18 +1,18 @@
 {% extends "base/base.html" %}
 {% load static %}
 
-{% block title %}Examen - Tecnicos{% endblock %}
+{% block title %}Examen - Evento{% endblock %}
 
 
 {% block cabecera %}
-    <h1>Lista Tecnicos</h1>
+    <h1>Lista Evento</h1>
     <hr>
     <br>
 {% endblock %}
 
 {% block contenido %}
     
-    {% if perms.examen.delete_tecnico %}
+    {% if perms.examen.delete_evento %}
         {% include "base/modal/_modal_eliminar.html" %}
     {% endif %}
 
@@ -23,7 +23,7 @@
     {% endif %}
 
 
-    {% include "models/tecnico/_item_tecnico.html" %}
+    {% include "models/evento/_item_evento.html" %}
 
 
 {% endblock %}

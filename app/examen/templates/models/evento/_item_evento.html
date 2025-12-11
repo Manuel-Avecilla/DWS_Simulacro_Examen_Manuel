@@ -1,0 +1,42 @@
+<div class="card mb-3" style="max-width: 22rem;">
+    <div class="card-body">
+        <h5 class="card-title">Evento: {{ Evento_Mostrar.titulo }}</h5>
+
+        <h6 class="card-subtitle mb-2 text-muted">
+            Creador del Evento: {{ Evento_Mostrar.creador.usuario.username }}
+        </h6>
+
+        <p class="card-text">
+            Descripcion: {{ Evento_Mostrar.descripcion|default:"Sin descripcion" }}
+        </p>
+
+        <p class="card-text">
+            Aforo: {{ Evento_Mostrar.aforo|default:"Sin Especificar" }}
+        </p>
+
+        <p class="card-text">
+            Fecha Inicio: {{ Evento_Mostrar.fecha_inicio|date:"d/m/Y H:i" }}
+        </p>
+
+        <p class="card-text">
+            Fecha Final: {{ Evento_Mostrar.fecha_final|date:"d/m/Y H:i" }}
+        </p>
+
+        <div class="ud-buttons">
+            {% if perms.examen.change_evento %}
+                <a class="m-4" href="{% url 'evento_editar' id_evento=Evento_Mostrar.id %}">
+                    Editar
+                </a>
+            {% endif %}
+            {% if perms.examen.delete_evento %}
+                <button type="button" class="btn btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalEliminar"
+                        data-url="{% url 'evento_eliminar' id_evento=Evento_Mostrar.id %}">
+                    Eliminar
+                </button>
+            {% endif %}
+        </div>
+
+    </div>
+</div>

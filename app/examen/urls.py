@@ -30,12 +30,22 @@ urlpatterns = [
     path('usuario/listar', views.usuarios_listar, name='usuarios_listar'),
     path('usuario/<int:id_usuario>', views.dame_usuario, name='dame_usuario'),
     
-    #---Tecnico---
+    #---Organizador---
     #---------Detalles-Lista---------
-    path('tecnico/listar', views.tecnicos_listar, name='tecnicos_listar'),
-    path('tecnico/<int:id_tecnico>', views.dame_tecnico, name='dame_tecnico'),
+    path('organizador/listar', views.organizadores_listar, name='organizadores_listar'),
+    path('organizador/<int:id_organizador>', views.dame_organizador, name='dame_organizador'),
     
+    #----EVENTO-----
     
+    #---------Detalles-Lista---------
+    path('evento/listar', views.eventos_listar, name='eventos_listar'),
+    path('evento/<int:id_evento>', views.dame_evento, name='dame_evento'),
+    
+    #--------------CRUD--------------
+    path('evento/crear/',views.evento_create, name='evento_create'),
+    path('evento/buscar/avanzado/',views.evento_buscar_avanzado, name='evento_buscar_avanzado'),
+    path('evento/editar/<int:id_evento>', views.evento_editar, name="evento_editar"),
+    path('evento/eliminar/<int:id_evento>', views.evento_eliminar, name="evento_eliminar"),
     
     #---CRUD---
 ]

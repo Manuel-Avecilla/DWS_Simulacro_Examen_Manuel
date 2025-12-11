@@ -16,22 +16,21 @@
     <h5>Menu Enlaces</h5>
     <br>
 
-    <p>(modelo) - CRUD</p>
+    <p>Evento - CRUD</p>
     <ul>
-        <li><a href="">(modelo) - CREATE</a></li>
-        <li><a href="">(modelo) - READ - Lista</a></li>
-        <li><a href="">(modelo) - READ - Filtro avanzado</a></li>
-        <li><a href="">(modelo) - UPDATE</a></li>
-        <li><a href="">(modelo) - DELETE</a></li>
+        <li><a href="{% url 'evento_create' %}">Evento - CREATE</a></li>
+        <li><a href="{% url 'eventos_listar' %}">Evento - READ - Lista</a></li>
+        <li><a href="{% url 'evento_buscar_avanzado' %}">Evento - READ - Filtro avanzado</a></li>
+        <li><a href="{% url 'evento_editar' id_evento=2 %}">Evento - UPDATE</a></li>
+        <li><a href="{% url 'eventos_listar' %}">Evento - DELETE</a></li>
     </ul>
-
     <br>
     <hr>
 
     <p>URLs</p>
     <ul>
         <li><a href="{% url 'usuarios_listar' %}">Lista Usuarios</a></li>
-        <li><a href="{% url 'tecnicos_listar' %}">Lista Tecnicos</a></li>
+        <li><a href="{% url 'organizadores_listar' %}">Lista Organizadores</a></li>
     </ul>
 
 

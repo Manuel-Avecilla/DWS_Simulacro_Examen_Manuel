@@ -33,18 +33,63 @@ class Command(BaseCommand):
                 
                 # Usuario
                 "add_usuario", "change_usuario", "delete_usuario", "view_usuario",
+                
+                # Organizador
+                "add_organizador", "change_organizador", "delete_organizador", "view_organizador",
+                
+                # Asistente
+                "add_asistente", "change_asistente", "delete_asistente", "view_asistente",
+                
+                # Categoria
+                "add_categoria", "change_categoria", "delete_categoria", "view_categoria",
+                
+                # Sala
+                "add_sala", "change_sala", "delete_sala", "view_sala",
+                
+                # Evento
+                "add_evento", "change_evento", "delete_evento", "view_evento",
             ],
             # ______________________ GRUPO TECNICO __________________________
-            "Tecnico": [
-                
-                # Usuario
-                "change_usuario","view_usuario",
-            ],
-            # ______________________ GRUPO USUARIO ________________________________
-            "Usuario": [
+            "Organizador": [
                 
                 # Usuario
                 "view_usuario",
+                
+                # Organizador
+                "view_organizador",
+                
+                # Asistente
+                "view_asistente",
+                
+                # Categoria
+                "view_categoria",
+                
+                # Sala
+                "view_sala",
+                
+                # Evento
+                "add_evento", "change_evento", "delete_evento", "view_evento",
+            ],
+            # ______________________ GRUPO USUARIO ________________________________
+            "Asistente": [
+                
+                # Usuario
+                "view_usuario",
+                
+                # Organizador
+                "view_organizador",
+                
+                # Asistente
+                "view_asistente",
+                
+                # Categoria
+                "view_categoria",
+                
+                # Sala
+                "view_sala",
+                
+                # Evento
+                "view_evento",
             ],
         }
 

@@ -1,0 +1,13 @@
+<div class="card mb-3" style="max-width: 22rem;">
+    <div class="card-body">
+        <h5 class="card-title">Organizador: {{ Organizador_Mostrar.usuario.username }}</h5>
+
+        <h6 class="card-subtitle mb-2 text-muted">
+            Rol: {{ Organizador_Mostrar.usuario.get_rol_display }}
+        </h6>
+
+        <p class="card-text">
+            Codigo Empleado: {{ Organizador_Mostrar.codigo_empleado|default:"No especificado" }}
+        </p>
+    </div>
+</div>
